@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<HTML>
+	<HEAD>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />		
+		<title>產品季節銷售金額</title>
+		<script src="http://code.jquery.com/jquery-1.9.1.js"></script>	
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="http://code.highcharts.com/highcharts.js"></script>
+
+	<link type="text/css" rel="stylesheet" href="css/quarter.css"/>
+		
+	</HEAD>
+	<BODY>
+		<div id="result"></div>
+		<table id="table-sparkline">
+		    <thead>	
+		        <tr>
+		            <th>產品名稱</th>
+		            <th>營業額</th>
+		            <th>每季營業額</th>
+		            <th>成本</th>
+		            <th>每季成本</th>
+		            <th>淨收</th>
+		            <th>每季淨收</th>
+		        </tr>
+		    </thead>
+		    <tbody id="tbody-sparkline">
+		        <tr>
+		            <th><a href="detail.php?product=雲端伺服器">雲端伺服器</a></th>
+		            <td>254</td>
+		            <td data-sparkline="71, 78, 39, 66 "/>
+		            <td>296</td>
+		            <td data-sparkline="68, 52, 80, 96 "/>
+		            <td>-42</td>
+		            <td data-sparkline="3, 26, -41, -30 ; column"/>
+		        </tr>
+		        <tr>
+		            <th><a href="detail.php?product=路由器">路由器</a></th>
+		            <td>246</td>
+		            <td data-sparkline="87, 44, 74, 41 "/>
+		            <td>181</td>
+		            <td data-sparkline="29, 54, 73, 25 "/>
+		            <td>65</td>
+		            <td data-sparkline="58, -10, 1, 16 ; column"/>
+		        </tr>
+		        <tr>
+		            <th><a href="detail.php?product=智慧停車系統">智慧停車系統</a></th>
+		            <td>101</td>
+		            <td data-sparkline="56, 12, 8, 25 "/>
+		            <td>191</td>
+		            <td data-sparkline="69, 14, 53, 55 "/>
+		            <td>-90</td>
+		            <td data-sparkline="-13, -2, -45, -30 ; column"/>
+		        </tr>
+		        <tr>
+		            <th><a href="detail.php?product=ＰＯＳ系統">ＰＯＳ系統</a></th>
+		            <td>303</td>
+		            <td data-sparkline="81, 50, 78, 94 "/>
+		            <td>76</td>
+		            <td data-sparkline="36, 15, 14, 11 "/>
+		            <td>227</td>
+		            <td data-sparkline="45, 35, 64, 83 ; column"/>
+		        </tr>
+		        <tr>
+		            <th><a href="detail.php?product=智能房屋">智能房屋</a></th>
+		            <td>200</td>
+		            <td data-sparkline="61, 80, 10, 49 "/>
+		            <td>217</td>
+		            <td data-sparkline="100, 8, 52, 57 "/>
+		            <td>-17</td>
+		            <td data-sparkline="-39, 72, -42, -8 ; column"/>
+		        </tr>
+		        <tr>
+		            <th><a href="detail.php?product=產品組合">產品組合</a></th>
+		            <td>118</td>
+		            <td data-sparkline="13, 48, 21, 36 "/>
+		            <td>273</td>
+		            <td data-sparkline="98, 86, 8, 81 "/>
+		            <td>-155</td>
+		            <td data-sparkline="-85, -38, 13, -45 ; column"/>
+		        </tr>
+
+		    </tbody>
+		</table>
+	<script src="js/quarter.js"></script>
+	
+	</BODY>
+</HTML>
